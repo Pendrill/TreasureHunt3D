@@ -17,7 +17,13 @@ public class PlayerMove : MonoBehaviour {
 	void Update () {
 		//The player can use WASD and the Arrow Keys to more the player character around
 		if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow)) {
-			
+
+			//I realize that instead of figuring out which way the player was facing and then adding the euler angles accordingly 
+			//we could just set the facing direction based on what key was just now pressed.
+			//The code would look something like: transform.eulerAngles = new Vector3 (0, 90, 0);
+			// isntead of what we have below. This new technique could save us 1 byte of memory as we would not longer need the char object anymore; 
+			//and then we wouldn't have to go through the if else statements and such.
+
 			if (lastButtonPressed == 'a') {
 				transform.eulerAngles += new Vector3 (0, 180, 0);
 			} else if (lastButtonPressed == 'w') {
