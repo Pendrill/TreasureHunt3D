@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMove : MonoBehaviour {
 	public Vector3 playerPosition;
 	public Vector3 CameraOffSet;
+	//public bool isForward=true;
 	// Use this for initialization
 	void Start () {
 		playerPosition = transform.position;
