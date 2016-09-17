@@ -88,11 +88,11 @@ public class PlayerMove : MonoBehaviour {
 			lastButtonPressed = 's';
 		}
 		//The player can use the E and Q or Delete and Left Shift to rotate the player (ie. change where they are facing)
-		if (Input.GetKey (KeyCode.E) || Input.GetKey (KeyCode.PageDown)) {
+		/*if (Input.GetKey (KeyCode.E) || Input.GetKey (KeyCode.PageDown)) {
 			transform.eulerAngles += new Vector3 (0, 5, 0);
 		}
 		if (Input.GetKey (KeyCode.Q) || Input.GetKey (KeyCode.RightShift)) {
 			transform.eulerAngles += new Vector3 (0, -5, 0);
-		}
+		}*/
 	}
 }
